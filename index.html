@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taha Shahud | Portfolio</title>
+  <meta name="description" content="Portfolio of Taha Shahud — B.Tech Integrated in Computer Science, Data Science specialization. Projects, skills, achievements.">
+  <meta name="keywords" content="Taha Shahud, Portfolio, B.Tech, Data Science, Projects, Web Development">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; line-height: 1.6; background-color: #f9fafb; color: #111827; scroll-behavior: smooth; }
+
+    a { text-decoration: none; color: inherit; transition: color 0.3s; }
+    a:hover { color: #2563eb; }
+
+    /* Header */
+    header { background: #111827; color: white; padding: 60px 20px; text-align: center; }
+    header h1 { font-size: 3rem; }
+    header p { font-size: 1.2rem; font-style: italic; margin-top: 10px; }
+    header .btn { display: inline-block; background-color: #2563eb; color: white; padding: 12px 24px; border-radius: 6px; font-weight: bold; margin-top: 20px; transition: background 0.3s, transform 0.2s; }
+    header .btn:hover { background-color: #1d4ed8; transform: translateY(-2px); }
+
+    /* Navigation */
+    nav { display: flex; justify-content: center; background-color: #1f2937; padding: 15px 0; flex-wrap: wrap; }
+    nav a { color: white; margin: 0 15px; font-weight: bold; }
+    nav a:hover { color: #2563eb; }
+
+    /* Sections */
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    section h2 { text-align: center; color: #111827; margin-bottom: 20px; }
+    section hr { border: 0; border-top: 2px solid #e5e7eb; width: 60px; margin: 10px auto 40px; }
+
+    /* Projects */
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .project-card { background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+    .project-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+    .project-card h3 { margin-bottom: 10px; color: #2563eb; }
+    .project-card p { margin-bottom: 10px; font-size: 0.95rem; }
+    .tech-stack { font-size: 0.85rem; color: #555; }
+
+    /* Skills */
+    .skill-bar { background-color: #e5e7eb; border-radius: 20px; overflow: hidden; margin-bottom: 15px; height: 15px; }
+    .skill-fill { height: 15px; background-color: #2563eb; width: 0; border-radius: 20px; transition: width 1.5s ease-in-out; }
+
+    /* Achievements */
+    .achievements ul { list-style-type: disc; padding-left: 20px; }
+
+    /* Footer */
+    footer { background-color: #111827; color: white; text-align: center; padding: 20px 0; margin-top: 40px; }
+
+    /* Responsive */
+    @media(max-width: 768px){ nav a { margin: 10px; } }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Taha Shahud</h1>
+    <p>Where computation meets insight — building intelligent solutions for tomorrow.</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <hr>
+    <p>Hello, I’m <strong>Taha Shahud</strong>, pursuing a <strong>B.Tech Integrated in Computer Science</strong> with specialization in <strong>Data Science</strong> at <strong>MGM University</strong>.</p>
+    <p>I focus on connecting theory with practical innovation in programming, algorithms, data analysis, and web technologies.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>🧩 Projects</h2>
+    <hr>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Student Record Management System</h3>
+        <p>Web-based system using C + CGI to manage student records dynamically.</p>
+        <div class="tech-stack">C, CGI, HTML, Data Structures</div>
+      </div>
+      <div class="project-card">
+        <h3>Data Sorting & Searching</h3>
+        <p>Implemented Bubble Sort & Binary Search with comparison/swap tracking for analysis.</p>
+        <div class="tech-stack">C, Algorithms, Time Complexity</div>
+      </div>
+      <div class="project-card">
+        <h3>Engineering Chemistry Study Compilation</h3>
+        <p>Compiled study materials with diagrams and notes covering Lubricants, Rubber, Polymers, and Plastics.</p>
+        <div class="tech-stack">Research, Documentation</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <hr>
+    <ul>
+      <li><strong>B.Tech (Integrated) in Computer Science, Data Science specialization</strong><br>MGM University, SOET (2023 – Present)</li>
+      <li><strong>Secondary School Certificate</strong><br>Indian Certificate of Secondary Education</li>
+    </ul>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <hr>
+    <p>Programming Languages:</p>
+    <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+    <p>Web Development (HTML, CSS, JS):</p>
+    <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+    <p>Data Analysis & Machine Learning:</p>
+    <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+    <p>Problem Solving & Algorithms:</p>
+    <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements">
+    <h2>Certifications & Achievements</h2>
+    <hr>
+    <div class="achievements">
+      <ul>
+        <li>Completed multiple academic projects in C and Web Integration</li>
+        <li>Participated in Departmental Technical Events (2025)</li>
+        <li>Ongoing specialization in Data Science Applications</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <hr>
+    <p>Email: <a href="mailto:shahudtaha08@gmail.com">shahudtaha08@gmail.com</a></p>
+    <p>Phone: +91 9067617577</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/tahashahud" target="_blank">linkedin.com/in/tahashahud</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Taha Shahud | Designed & Developed by Taha Shahud</p>
+  </footer>
+
+  <script>
+    // Animate skill bars when they appear in viewport
+    function animateSkills() {
+      const skillFills = document.querySelectorAll('.skill-fill');
+      skillFills.forEach(fill => {
+        const sectionTop = fill.closest('section').getBoundingClientRect().top;
+        if(sectionTop < window.innerHeight - 50){
+          fill.style.width = fill.dataset.width;
+        }
+      });
+    }
+    window.addEventListener('scroll', animateSkills);
+    window.addEventListener('load', animateSkills);
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
