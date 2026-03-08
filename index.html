@@ -1,86 +1,102 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Taha Shahud | Portfolio</title>
+<meta name="description" content="Portfolio of Taha Shahud — B.Tech Integrated Computer Science (Data Science), projects, skills, achievements." />
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
 
 <style>
-
 *{box-sizing:border-box;margin:0;padding:0}
 
 body{
 font-family:'Roboto',sans-serif;
-background:#f9fafb;
+background:#f8fafc;
 color:#111827;
 line-height:1.6;
 scroll-behavior:smooth
 }
 
+a{text-decoration:none;color:inherit}
+
+/* HEADER */
 header{
-background:#111827;
+background:linear-gradient(135deg,#1f2937,#111827);
 color:white;
 text-align:center;
-padding:70px 20px
+padding:80px 20px
 }
 
 header h1{font-size:3rem}
-header p{font-style:italic;margin-top:10px}
+header p{margin-top:10px;font-style:italic;color:#d1d5db}
 
-header .btn{
+.btn{
 display:inline-block;
+margin-top:25px;
 background:#2563eb;
 color:white;
-padding:12px 24px;
+padding:12px 28px;
 border-radius:6px;
-margin-top:20px;
-font-weight:bold
+font-weight:500
 }
 
+/* NAV */
 nav{
 background:#1f2937;
 display:flex;
 justify-content:center;
-padding:15px
+flex-wrap:wrap;
+padding:14px
 }
 
 nav a{
 color:white;
 margin:0 15px;
-font-weight:bold
+font-weight:500
 }
 
+nav a:hover{color:#60a5fa}
+
+/* SECTIONS */
 section{
 max-width:1100px;
 margin:auto;
-padding:60px 20px
+padding:70px 20px
 }
 
 section h2{
 text-align:center;
-margin-bottom:10px
+margin-bottom:8px
 }
 
 section hr{
 border:0;
 border-top:2px solid #e5e7eb;
-width:60px;
+width:70px;
 margin:10px auto 40px
 }
 
+/* PROJECT CARDS */
 .projects-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px
+gap:25px
 }
 
 .project-card{
 background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1)
+padding:25px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.07);
+transition:all .3s
+}
+
+.project-card:hover{
+transform:translateY(-6px);
+box-shadow:0 12px 28px rgba(0,0,0,0.12)
 }
 
 .project-card h3{
@@ -88,11 +104,24 @@ color:#2563eb;
 margin-bottom:10px
 }
 
+.project-card p{font-size:.95rem;color:#374151}
+
 .tech-stack{
-font-size:0.85rem;
-color:#555
+font-size:.8rem;
+margin-top:8px;
+color:#6b7280
 }
 
+/* FEATURED PROJECT */
+.featured{
+background:#eff6ff;
+border-left:5px solid #2563eb;
+padding:25px;
+border-radius:10px;
+margin-bottom:40px
+}
+
+/* SKILLS */
 .skill-bar{
 background:#e5e7eb;
 border-radius:20px;
@@ -105,9 +134,13 @@ margin-bottom:15px
 background:#2563eb;
 height:15px;
 width:0;
-transition:width 1.5s ease-in-out
+transition:width 1.5s ease
 }
 
+/* ACHIEVEMENTS */
+ul{padding-left:20px}
+
+/* FOOTER */
 footer{
 background:#111827;
 color:white;
@@ -115,7 +148,13 @@ text-align:center;
 padding:20px
 }
 
+/* MOBILE */
+@media(max-width:768px){
+header h1{font-size:2.2rem}
+nav a{margin:8px}
+}
 </style>
+
 </head>
 
 <body>
@@ -138,125 +177,108 @@ padding:20px
 <section id="about">
 <h2>About Me</h2>
 <hr>
-
 <p>Hello, I’m <strong>Taha Shahud</strong>, pursuing a <strong>B.Tech Integrated in Computer Science</strong> with specialization in <strong>Data Science</strong> at <strong>MGM University</strong>.</p>
-
-<p>I focus on connecting theory with practical innovation in programming, algorithms, data analysis, and web technologies.</p>
-
+<p>I enjoy building intelligent systems that connect software engineering, AI and data-driven insights.</p>
 </section>
 
 <section id="projects">
-
 <h2>Projects</h2>
 <hr>
 
+<div class="featured">
+<h3>⭐ Featured Project – TalkEasy</h3>
+<p>TalkEasy is an AI-powered mental wellness platform where users can talk with an AI therapist, track mood, build healthy habits and analyze emotional progress.</p>
+</div>
+
 <div class="projects-grid">
 
-<div class="project-card">
-<h3>Student Record Management System</h3>
-<p>Web-based system using C + CGI to manage student records dynamically.</p>
-<div class="tech-stack">C, CGI, HTML, Data Structures</div>
-</div>
-
+<a href="https://talk-talk--shahudtaha08.replit.app/dashboard" target="_blank">
 <div class="project-card">
 <h3>TalkEasy – AI Mental Wellness Platform</h3>
-<p>AI-powered mental health platform allowing users to talk with an AI therapist, track mood, build habits and visualize emotional progress.</p>
-<div class="tech-stack">React, Node.js, AI Chatbot</div>
+<p>AI therapist chatbot, mood tracker, habit tracker and mental health analytics dashboard.</p>
+<div class="tech-stack">React • Node.js • AI Chatbot</div>
 </div>
+</a>
+
+<a href="file:///C:/Users/Taha/OneDrive/Desktop/Taha%20Shahud.html" target="_blank">
+<div class="project-card">
+<h3>Student Record Management System</h3>
+<p>Web system using C + CGI to manage student data and records dynamically.</p>
+<div class="tech-stack">C • CGI • Data Structures</div>
+</div>
+</a>
 
 <div class="project-card">
 <h3>Engineering Chemistry Study Compilation</h3>
-<p>Compiled academic notes covering Lubricants, Rubber, Plastics and Polymers.</p>
-<div class="tech-stack">Research & Documentation</div>
+<p>Compiled structured study material covering Lubricants, Rubber, Polymers and Plastics.</p>
+<div class="tech-stack">Research • Documentation</div>
 </div>
 
 </div>
-
 </section>
 
 <section id="education">
-
 <h2>Education</h2>
 <hr>
 
 <ul>
-
 <li>
 <strong>B.Tech (Integrated) Computer Science – Data Science</strong><br>
-MGM University, School of Engineering & Technology (2023 – Present)
+MGM University – School of Engineering & Technology (2023 – Present)
 </li>
 
 <li>
 <strong>Secondary School Certificate</strong><br>
 Indian Certificate of Secondary Education
 </li>
-
 </ul>
 
 </section>
 
 <section id="skills">
-
 <h2>Technical Skills</h2>
 <hr>
 
 <p>Programming Languages</p>
-<div class="skill-bar">
-<div class="skill-fill" data-width="50%"></div>
-</div>
+<div class="skill-bar"><div class="skill-fill" data-width="50%"></div></div>
 
 <p>Web Development</p>
-<div class="skill-bar">
-<div class="skill-fill" data-width="30%"></div>
-</div>
+<div class="skill-bar"><div class="skill-fill" data-width="30%"></div></div>
 
 <p>Data Analysis</p>
-<div class="skill-bar">
-<div class="skill-fill" data-width="0%"></div>
-</div>
+<div class="skill-bar"><div class="skill-fill" data-width="0%"></div></div>
 
 <p>Problem Solving & Algorithms</p>
-<div class="skill-bar">
-<div class="skill-fill" data-width="10%"></div>
-</div>
+<div class="skill-bar"><div class="skill-fill" data-width="10%"></div></div>
 
 </section>
 
 <section id="achievements">
-
 <h2>Achievements</h2>
 <hr>
 
 <ul>
-
-<li>Participated in the AI Summit held on 6th and 7th March</li>
-
-<li>Developed an AI mental wellness project called <strong>TalkEasy</strong> during the summit</li>
-
-<li>Completed academic projects integrating C programming with web systems</li>
-
+<li>Participated in the AI Summit held on 6th and 7th March.</li>
+<li>Developed an AI mental wellness platform called <strong>TalkEasy</strong>.</li>
+<li>Completed academic projects integrating C programming and web systems.</li>
 </ul>
 
 </section>
 
 <section id="contact">
-
 <h2>Contact</h2>
 <hr>
 
 <p>Email: <a href="mailto:shahudtaha08@gmail.com">shahudtaha08@gmail.com</a></p>
-
 <p>Phone: +91 9067617577</p>
 
-<p>
-LinkedIn:
+<p>LinkedIn:
 <a href="https://www.linkedin.com/in/tahashahud" target="_blank">
 linkedin.com/in/tahashahud
 </a>
 </p>
 
-<p>
-GitHub:
+<p>GitHub:
 <a href="https://github.com/shahudtaha08-source" target="_blank">
 github.com/shahudtaha08-source
 </a>
@@ -269,7 +291,6 @@ github.com/shahudtaha08-source
 </footer>
 
 <script>
-
 function animateSkills(){
 document.querySelectorAll('.skill-fill').forEach(bar=>{
 const top=bar.closest('section').getBoundingClientRect().top
@@ -278,10 +299,16 @@ bar.style.width=bar.dataset.width
 }
 })
 }
-
 window.addEventListener('scroll',animateSkills)
 window.addEventListener('load',animateSkills)
 
+document.querySelectorAll('nav a').forEach(link=>{
+link.addEventListener('click',e=>{
+e.preventDefault()
+const target=document.querySelector(link.getAttribute('href'))
+target.scrollIntoView({behavior:'smooth'})
+})
+})
 </script>
 
 </body>
